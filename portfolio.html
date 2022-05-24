@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio-portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/css/portfolio.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="conteiner header-nav">
+            <nav class="navigation-wrapper">
+                <a href="index.html" class="logo link"><span class="logo__span">Web</span>Studio</a>
+                <ul class="navigation">
+                    <li class="navigation__list li-nav"><a href="index.html" class="navigation__link link">Студия</a></li>
+                    <li class="navigation__list li-nav current"><a href="portfolio.html" class="navigation__link link current">Портфолио</a></li>
+                    <li class="navigation__list li-nav"><a href="./index.html" class="navigation__link link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="navigation">
+                <li class="navigation__list navigation__list--active li-nav">
+                    <svg class="icon-mail">
+                        <use href="./images/icons.svg#icon-e-mail"></use>
+                    </svg>
+                    <a href="mailto:info@devstudio.com" class="navigation__link navigation__link--color link">info@devstudio.com</a>
+                </li>
+                <li class="navigation__list navigation__list--active li-nav">
+                    <svg class="icon-phone">
+                        <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>
+                    <a href="tel:+380961111111" class="navigation__link navigation__link--color link">+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="filter section">
+            <div class="conteiner">
+                <h1 class="visually-hidden">Заголовок для симантики</h1>
+                <ul class="filter__wrapper">
+                    <li class="filter__list li-nav"><button type="button" class="filter__button current">Все</button>
+                    </li>
+                    <li class="filter__list li-nav"><button type="button" class="filter__button">Веб-сайты</button>
+                    </li>
+                    <li class="filter__list li-nav"><button type="button" class="filter__button">Приложения</button>
+                    </li>
+                    <li class="filter__list li-nav"><button type="button" class="filter__button">Дизайн</button>
+                    </li>
+                    <li class="filter__list li-nav"><button type="button" class="filter__button">Маркетинг</button>
+                    </li>
+                </ul>
+                <ul class="product">
+                    <li class="product__list li-nav">
+                        <div class="product__content"><img src="images/img-page-2-(9).jpg" alt="Изображение" width="370">
+                            <div class="product__overley">
+                                <p class="product__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                 Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h3 class="description__title">Технокряк</h3>
+                            <p class="description__text">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="product__list li-nav">
+                        <div class="product__content"><img src="images/img-page-2-(8).jpg" alt="Изображение" width="370">
+                            <div class="product__overley">
+                                <p class="product__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                 Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h3 class="description__title">Постер New Orlean vs Golden Star</h3>
+                            <p class="description__text">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="product__list li-nav">
+                        <div class="product__content"><img src="images/img-page-2-(7).jpg" alt="Изображение" width="370">
+                            <div class="product__overley">
+                                <p class="product__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                 Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h3 class="description__title">Ресторан Seafood</h3>
+                            <p class="description__text">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="product__list li-nav">
+                        <div class="product__content"><img src="images/img-page-2-(6).jpg" alt="Изображение" width="370">
+                            <div class="product__overley">
+                                <p class="product__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                 Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h3 class="description__title">Проект Prime</h3>
+                            <p class="description__text">Маркетинг</p>
+                        </div> 
+                    </li>
+                    <li class="product__list li-nav">
+                        <div class="product__content"><img src="images/img-page-2-(5).jpg" alt="Изображение" width="370">
+                            <div class="product__overley">
+                                <p class="product__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                 Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h3 class="description__title">Проект Boxes</h3>
+                            <p class="description__text">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="product__list li-nav">
+                        <div class="product__content"><img src="images/img-page-2-(4).jpg" alt="Изображение" width="370">
+                            <div class="product__overley">
+                                <p class="product__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                 Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h3 class="description__title">Inspiration has no Borders</h3>
+                            <p class="description__text">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="product__list li-nav">
+                        <div class="product__content"><img src="images/img-page-2-(3).jpg" alt="Изображение" width="370">
+                            <div class="product__overley">
+                                <p class="product__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                 Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h3 class="description__title">Издание Limited Edition</h3>
+                            <p class="description__text">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="product__list li-nav">
+                        <div class="product__content"><img src="images/img-page-2-(2).jpg" alt="Изображение" width="370">
+                            <div class="product__overley">
+                                <p class="product__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                 Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h3 class="description__title">Проект LAB</h3>
+                            <p class="description__text">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="product__list li-nav">
+                        <div class="product__content"><img src="images/img-page-2-(1).jpg" alt="Изображение" width="370">
+                            <div class="product__overley">
+                                <p class="product__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                 Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h3 class="description__title">Growing Business</h3>
+                            <p class="description__text">Приложение</p> 
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="conteiner footer-conteiner">
+            
+            <address class="address">
+                <ul>
+                    <li class="li-nav"><a href="index.html" class="address__logo logo link"><span class="address__text">Web</span>Studio</a></li>
+                    <li class="li-nav"><a href="https://goo.gl/maps/nFP2zPjVNfL6a7GS8" class="address__link address__link-map link">г.Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="li-nav"><a href="mailto:info@example.com" class="address__link address__link-contacts link">info@example.com</a></li>
+                    <li class="li-nav"><a href="tel:+380991111111" class="address__link address__link-contacts link">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+            <div class="social-wrapper">
+                <h3 class="second-titel">присоединяйтесь</h3>
+                <ul class="social">
+                    <li class="social__list li-nav">
+                        <svg class="social__icons" width="20" height="20">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </li>
+                    <li class="social__list li-nav">
+                        <svg class="social__icons" width="20" height="20">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="social__list li-nav">
+                        <svg class="social__icons" width="20" height="20">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="social__list li-nav">
+                        <svg class="social__icons" width="20" height="20">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="distribution">
+                <h3 class="distribution__text second-titel">Подпишитесь на рассылку</h3>
+                <form class="telegram">
+                <label class="telegram__label">
+                    <input class="telegram__input" type="email" name="e-mail" placeholder="E-mail">
+                </label>
+                <button type="submit" class="telegram__button">Подписаться
+                    <svg class="telegram__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
