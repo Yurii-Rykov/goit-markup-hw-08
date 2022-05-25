@@ -298,3 +298,129 @@
     text-align: center;
     margin-top: 30px;
 }
+// ========================end-hero==================== //
+        .abuot{
+            max-width: 450px;
+
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+        }
+        .abuot__icon{
+            padding: 25px;
+            background-color:var(--secont-white);
+            text-align: center;
+        }
+        .about__text{
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+            color: var(--grey-color);
+        }
+// =========================end-about================= //
+@media screen and (max-width:1199px) {
+        .work.section{
+                display: none;
+        }
+}
+//======================end-works==================== //
+.team{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--secont-white);
+}
+.team__title{
+    margin-bottom: 30px;
+}
+.team__list{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+.employee{
+    background-color: var(--white-color);
+    border-radius: 0px 0px 4px 4px;
+}
+.employee__title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+.employee__text{
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--grey-color);
+    margin-bottom: 16px;
+}
+.employee__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.employee__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%; 
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:first-child){
+        margin-left: 10px;
+    }
+    &:hover, &:focus{
+        background-color: var(--blue-color);
+    }
+    &:hover .employee__icons,&:focus .employee__icons{
+        fill: var(--white-color);
+    }
+}
+.employee__icons{
+    fill:var(--secont-grey);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+// ========================end-team====================== //
+.client{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+}
+.client-title{
+    margin-bottom: 30px;
+}
+.client__list{
+    padding: 16px 50px;
+    border: 1px solid var(--secont-grey);
+    border-radius: 4px;
+    margin: 15px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+        border: 1px solid var(--blue-color);
+    }
+    &:hover .client__icons, &:focus .client__icons{
+        fill: var(--blue-color);
+    }
+}
+.client__icons{
+    fill: var(--secont-grey);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+// ====================end-client=================== //

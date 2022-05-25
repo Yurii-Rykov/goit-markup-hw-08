@@ -35,8 +35,10 @@ img{
     }
 }
 .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .li-nav{
     list-style-type: none;
@@ -57,6 +59,7 @@ img{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-top: 30px;
+    text-align: center;
 }
 .visually-hidden {
     position: absolute;

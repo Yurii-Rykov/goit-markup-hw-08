@@ -53,8 +53,8 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .li-nav {
@@ -74,6 +74,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-top: 30px;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -146,6 +147,177 @@ img {
   .logo {
     font-size: 24px;
   }
+}
+
+.footer-conteiner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.address__logo {
+  color: var(--white-color);
+  margin-bottom: 20px;
+  margin-right: 0px;
+  display: inline-block;
+}
+
+.address__text {
+  color: var(--blue-color);
+}
+
+.address__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+  display: block;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address__link-contacts:hover, .address__link-contacts:focus {
+  color: var(--blue-color);
+}
+
+.address__link-map {
+  color: var(--white-color);
+}
+
+.social-wrapper .second-titel {
+  color: var(--white-color);
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__list:not(:first-child) {
+  margin-left: 10px;
+}
+
+.social__list .social__icons {
+  fill: var(--white-color);
+}
+
+.social__list:hover, .social__list .ellipse-icon-footer:focus {
+  background: var(--blue-color);
+}
+
+.footer {
+  background-color: var(--fon-color);
+}
+
+.second-titel.distribution__text {
+  color: var(--white-color);
+  margin-top: 60px;
+}
+
+.telegram__label {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.telegram__input {
+  height: 50px;
+  width: 450px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--fon-color);
+  outline: none;
+  color: var(--white-color);
+}
+
+.telegram__input::-webkit-input-placeholder {
+  color: gba(255, 255, 255, 0.6);
+}
+
+.telegram__input:-ms-input-placeholder {
+  color: gba(255, 255, 255, 0.6);
+}
+
+.telegram__input::-ms-input-placeholder {
+  color: gba(255, 255, 255, 0.6);
+}
+
+.telegram__input::placeholder {
+  color: gba(255, 255, 255, 0.6);
+}
+
+.telegram__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--white-color);
+  background: #2196F3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--blue-color);
+  border-radius: 4px;
+}
+
+.telegram__icon {
+  margin-left: 10px;
 }
 
 .header {

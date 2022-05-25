@@ -129,10 +129,25 @@
                 <h2 class="team__title title">Наша команда</h2>
                 <ul class="flex-between">
                     <li class="team__list li-nav">
-                        <img src="images/img(1).jpg" alt="фото" width="270">
+                        <picture>
+                            <source
+                              srcset="./images/employee1-278.jpg 1x, ./images/employee1-556.jpg 2x"
+                              media="(min-width: 1200px)"
+                            />
+                            <source
+                              srcset="./images/employee1-354.jpg 1x, ./images/employee1-708.jpg 2x"
+                              media="(min-width: 768px)"
+                            />
+                            <source
+                              srcset="./images/employee1-450.jpg 1x, ./images/employee1-900.jpg 2x"
+                              media="(max-width: 767px)"
+                            />
+                            <img src="./images/employee1-278.jpg" alt="фото" >
+                        </picture>
                         <div class="employee">
                             <h3 class="employee__title">Игорь Демьяненко</h3>
                             <p class="employee__text">Product Designer</p>
+
                             <ul class="employee__wrapper">
                                 <li class="employee__list li-nav">
                                     <svg class="employee__icons" width="20" height="20">
@@ -158,7 +173,18 @@
                         </div>
                     </li>
                     <li class="team__list li-nav">
-                        <img src="images/img(2).jpg" alt="фото" width="270">
+                        <picture>
+                            <source srcset="./images/employee2-270.jpg 1x, ./images/employee2-540.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source srcset="./images/employee2-354.jpg 1x, ./images/employee2-708.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source srcset="./images/employee2-450.jpg 1x, ./images/employee2-900.jpg 2x"
+                            media="(max-width: 768px)"
+                            />
+                            <img src="./images/employee2-270.jpg" alt="фото">
+                        </picture>
                         <div class="employee">
                             <h3 class="employee__title">Ольга Репина</h3>
                             <p class="employee__text">Frontend Developer</p>
@@ -187,7 +213,18 @@
                         </div>
                     </li>
                     <li class="team__list li-nav">
-                        <img src="images/img(3).jpg" alt="фото" width="270">
+                        <picture>
+                            <source srcset="./images/employee3-270.jpg 1x, ./images/employee3-540.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source srcset="./images/employee3-354.jpg 1x, ./images/employee3-708.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source srcset="./images/employee3-450.jpg 1x, ./images/employee3-900.jpg 2x"
+                            media="(max-width: 768px)"
+                            />
+                            <img src="./images/employee2-270.jpg" alt="фото">
+                        </picture>
                         <div class="employee">
                             <h3 class="employee__title">Николай Тарасов</h3>
                             <p class="employee__text">Marketing</p>
@@ -216,7 +253,18 @@
                         </div>
                     </li>
                     <li class="team__list li-nav">
-                        <img src="images/img(4).jpg" alt="фото" width="270">
+                        <picture>
+                            <source srcset="./images/employee4-270.jpg 1x, ./images/employee4-540.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source srcset="./images/employee4-354.jpg 1x, ./images/employee4-708.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source srcset="./images/employee4-450.jpg 1x, ./images/employee4-900.jpg 2x"
+                            media="(max-width: 768px)"
+                            />
+                            <img src="./images/employee2-270.jpg" alt="фото">
+                        </picture>
                         <div class="employee">
                             <h3 class="employee__title">Михаил Ермаков</h3>
                             <p class="employee__text">UI Designer</p>
@@ -340,7 +388,7 @@
         <div class="conteiner footer-conteiner">
             
             <address class="address">
-                <ul>
+                <ul class="address__wrapper">
                     <li class="li-nav"><a href="index.html" class="address__logo logo link"><span class="address__text">Web</span>Studio</a></li>
                     <li class="li-nav"><a href="https://goo.gl/maps/nFP2zPjVNfL6a7GS8" class="address__link address__link-map link">г.Киев, пр-т Леси Украинки, 26</a></li>
                     <li class="li-nav"><a href="mailto:info@example.com" class="address__link address__link-contacts link">info@example.com</a></li>
