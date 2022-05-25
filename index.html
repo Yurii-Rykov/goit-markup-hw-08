@@ -17,30 +17,44 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="conteiner header-nav">
-            <nav class="navigation-wrapper">
+            <div class="mobail-menu">
                 <a href="index.html" class="logo link"><span class="logo__span">Web</span>Studio</a>
-                <ul class="navigation">
-                    <li class="navigation__list li-nav current"><a href="index.html" class="navigation__link link current">Студия</a></li>
-                    <li class="navigation__list li-nav"><a href="portfolio.html" class="navigation__link link">Портфолио</a></li>
-                    <li class="navigation__list li-nav"><a href="./index.html" class="navigation__link link">Контакты</a></li>
+
+                <button type="button" class="mobail-menu__btn" data-menu-button>
+                    <svg width="20px" height="20px">
+                        <use class="mobail-menu__icon-open" href="./images/icons.svg#icon-menu"></use>
+                        <use class="mobail-menu__menu-close" href="./images/icons.svg#icon-close_btn"></use>
+                    </svg>
+                  </button>
+            </div>
+    <div class="backdrop-menu " data-menu>
+    <div class="modal-menu">
+    
+            <nav class="navigation-wrapper">
+                <ul class="navigation-menu">
+                    <li class="navigation-menu__list li-nav current"><a href="index.html" class="navigation-menu__link link current">Студия</a></li>
+                    <li class="navigation-menu__list li-nav"><a href="portfolio.html" class="navigation-menu__link link">Портфолио</a></li>
+                    <li class="navigation-menu__list li-nav"><a href="./index.html" class="navigation-menu__link link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="navigation">
-                <li class="navigation__list navigation__list--active li-nav">
-                    <svg class="icon-mail">
-                        <use href="./images/icons.svg#icon-e-mail"></use>
-                    </svg>
-                    <a href="mailto:info@devstudio.com" class="navigation__link navigation__link--color link">info@devstudio.com</a>
+            <ul class="navigation-menu navigation-contact">
+                <li class="navigation-menu__list navigation-menu__list--active li-nav">
+                    <a href="mailto:info@devstudio.com" class="navigation-menu__link navigation-menu__link--color menu-mail link">info@devstudio.com</a>
                 </li>
-                <li class="navigation__list navigation__list--active li-nav">
-                    <svg class="icon-phone">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
-                    <a href="tel:+380961111111" class="navigation__link navigation__link--color link">+38 096 111 11 11</a>
+                <li class="navigation-menu__list navigation__list--active li-nav">
+                    <a href="tel:+380961111111" class="navigation-menu__link navigation-menu__link--color menu-tel link">+38 096 111 11 11</a>
                 </li>
             </ul>
+            <ul class="social-menu">
+                <li class="social-menu__list li-nav"><a href="/" class="social-menu__link link">Instagram</a></li>
+                <li class="social-menu__list li-nav"><a href="/" class="social-menu__link link">Twitter</a></li>
+                <li class="social-menu__list li-nav"><a href="/" class="social-menu__link link">Facebook</a></li>
+                <li class="social-menu__list li-nav"><a href="/" class="social-menu__link link">LinkedIn</a></li>
+            </ul>
+    </div>        
+    </div>        
         </div>
     </header>
 
@@ -375,6 +389,7 @@
     </footer>
     
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
