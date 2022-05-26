@@ -252,4 +252,27 @@
 .telegram__icon{
     margin-left: 10px;
 }
-// ==========================mobail-footer=================== //
+// ==========================END-mobail-footer=================== //
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .second-titel.social-wrapper__text{
+        text-align: center;
+        margin-top: 0px;
+    }
+    .distribution__text{
+        text-align: center;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .telegram{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .footer-box-contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}

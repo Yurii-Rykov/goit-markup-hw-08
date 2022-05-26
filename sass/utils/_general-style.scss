@@ -47,6 +47,12 @@ img{
 //     display: flex;
 //     justify-content: space-between;
 // }
+.flex-between{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+}
 .title{
     font-size: 36px;
     line-height: 1.1;
@@ -60,6 +66,11 @@ img{
     text-transform: uppercase;
     margin-top: 30px;
     text-align: center;
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .second-titel{
+        text-align: start;
+    }
 }
 .visually-hidden {
     position: absolute;

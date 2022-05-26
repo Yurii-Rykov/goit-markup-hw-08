@@ -18,7 +18,7 @@
 
 <body>
     <header class="header">
-        <div class="conteiner header-nav">
+    <div class="conteiner header-nav">
             <div class="mobail-menu">
                 <a href="index.html" class="logo link"><span class="logo__span">Web</span>Studio</a>
 
@@ -43,7 +43,7 @@
                 <li class="navigation-menu__list navigation-menu__list--active li-nav">
                     <a href="mailto:info@devstudio.com" class="navigation-menu__link navigation-menu__link--color menu-mail link">info@devstudio.com</a>
                 </li>
-                <li class="navigation-menu__list navigation__list--active li-nav">
+                <li class="navigation-menu__list navigation-menu__list--active li-nav">
                     <a href="tel:+380961111111" class="navigation-menu__link navigation-menu__link--color menu-tel link">+38 096 111 11 11</a>
                 </li>
             </ul>
@@ -54,8 +54,36 @@
                 <li class="social-menu__list li-nav"><a href="/" class="social-menu__link link">LinkedIn</a></li>
             </ul>
     </div>        
-    </div>        
-        </div>
+    </div>    
+    <!-- =================header-tablet============= -->
+    <div class="header-tablet">
+        <a href="index.html" class="logo link"><span class="logo__span">Web</span>Studio</a>
+        <nav class="navigation-wrapper">
+            <ul class="navigation">
+                <li class="navigation__list li-nav current"><a href="index.html" class="navigation__link link current">Студия</a></li>
+                <li class="navigation__list li-nav"><a href="portfolio.html" class="navigation__link link">Портфолио</a></li>
+                <li class="navigation__list li-nav"><a href="./index.html" class="navigation__link link">Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="navigation navigation-tablet">
+            <li class="navigation-tablet__list navigation__list--active li-nav">
+                <svg class="icon-mail">
+                    <use href="./images/icons.svg#icon-e-mail"></use>
+                </svg>
+                <a href="mailto:info@devstudio.com" class="navigation__link navigation__link--color tablet-mail link">info@devstudio.com</a>
+            </li>
+            <li class="navigation-tablet__list navigation__list--active li-nav">
+                <svg class="icon-phone">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                <a href="tel:+380961111111" class="navigation__link navigation__link--color tablet-tel link">+38 096 111 11 11</a>
+            </li>
+        </ul>
+    </div>
+
+
+    </div>
+        
     </header>
 
     <main>
@@ -386,7 +414,7 @@
 
     <footer class="footer">
         <div class="conteiner footer-conteiner">
-            
+        <div class="footer-box-contact">
             <address class="address">
                 <ul class="address__wrapper">
                     <li class="li-nav"><a href="index.html" class="address__logo logo link"><span class="address__text">Web</span>Studio</a></li>
@@ -396,7 +424,7 @@
                 </ul>
             </address>
             <div class="social-wrapper">
-                <h3 class="second-titel">присоединяйтесь</h3>
+                <h3 class="second-titel social-wrapper__text">присоединяйтесь</h3>
                 <ul class="social">
                     <li class="social__list li-nav">
                         <svg class="social__icons" width="20" height="20">
@@ -420,6 +448,9 @@
                     </li>
                 </ul>
             </div>
+        </div>
+
+        
             <div class="distribution">
                 <h3 class="distribution__text second-titel">Подпишитесь на рассылку</h3>
                 <form class="telegram">
@@ -440,4 +471,4 @@
     <script src="./js/menu.js"></script>
 </body>
 
-</html>
+</html> 

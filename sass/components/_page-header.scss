@@ -93,9 +93,107 @@
 .mobail-menu__btn.is-open .mobail-menu__icon-open{
     display: none;
 }
-@media screen and (min-width:767px) {
-    .mobail-menu__btn{
+
+@media screen and (min-width:768px) {
+    .mobail-menu__btn, .mobail-menu{
         display: none;
     }
 }
+
 // ========finish-mobail-header================= //
+.header-tablet{
+    display: none;
+    // margin-left: auto;
+    // margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (min-width:768px) {
+    .header-tablet{
+        display: flex;
+    }
+}
+// .header-nav {
+//     display: flex;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+// .navigation-wrapper{
+//     display: flex;
+//     align-items: center;
+// }
+.navigation{
+    display: flex;
+    // margin-left: auto;
+}
+.navigation.navigation-tablet{
+    flex-direction: column;
+    justify-content: center;
+}
+.navigation__list + .navigation__list{
+    margin-left: 50px;
+}
+
+.navigation__list.current::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--blue-color);
+    border-radius: 2px;
+    bottom: 0px;
+}
+.navigation__link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--main-font-color);
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    .current {
+    color: var(--blue-color);
+}
+}
+.tablet-mail, .tablet-tel{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.navigation__link--color{
+    color: var(--grey-color);
+    margin-left: 10px;
+}
+
+.navigation__list--active{
+    display: flex;
+    align-items: center;
+
+    &:hover .icon-mail,
+    &:hover .icon-phone{
+    fill: var(--blue-color);
+}
+}
+.icon-mail{
+    width: 16px;
+    height: 12px;
+
+    fill: var(--grey-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-phone{
+    width: 14px;
+    height: 16px;
+
+    fill: var(--grey-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+// ===================end-tablet================== //
