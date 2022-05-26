@@ -119,13 +119,16 @@
 // .telegram__icon{
 //     margin-left: 10px;
 // }
-
+.footer{
+    background-color: var(--fon-color);
+}
 .footer-conteiner{
     padding-top: 60px;
     padding-bottom: 60px;
     // display: flex;
     // flex-direction: row;
     // align-items: baseline;
+    
 }
 .address{
     font-style: normal;
@@ -198,9 +201,6 @@
         background: var(--blue-color);
     }
 }
-.footer{
-    background-color: var(--fon-color);
-}
 .distribution{
     // margin-left: 93px;
 }
@@ -253,7 +253,7 @@
     margin-left: 10px;
 }
 // ==========================END-mobail-footer=================== //
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px){
     .second-titel.social-wrapper__text{
         text-align: center;
         margin-top: 0px;
@@ -262,17 +262,56 @@
         text-align: center;
     }
 }
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) {
     .telegram{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 }
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px)  {
     .footer-box-contact{
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+    }
+}
+@media screen and (min-width:1200px) {
+    .footer-conteiner{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline; 
+    }
+    .address{
+        margin-right: 70px;
+    }
+    .address__wrapper{
+      
+        align-items: flex-start;
+    }
+    .social-wrapper{
+        display: flex;
+        flex-direction: column; 
+    }
+    .distribution{
+        margin-left: 93px;
+    }
+    .telegram{
+       flex-direction: row;
+    }
+    .telegram__label{
+        margin-right: 12px;
+    }
+    .second-titel.social-wrapper__text{
+        text-align: start;
+        margin-top: 0px;
+    }
+    .distribution__text{
+        text-align: start;
+    }
+    .telegram__input{
+        width: 358px;
     }
 }

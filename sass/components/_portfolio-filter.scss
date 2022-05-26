@@ -64,20 +64,28 @@
     flex-wrap: wrap;
     padding-bottom: 40px;
  }
+ @media screen and(min-width:768px) {
+     .filter__wrapper{
+        justify-content: center;
+        padding-bottom: 30px;
+     }
+ }
  .filter__list{
      margin-bottom: 15px;
  }
  
- 
  .filter__list + .filter__list{
     margin-left:8px;
 }
-.filter__list:nth-last-child(-n + 3){
-    margin-bottom: 0px;
+@media screen and(max-width:768px) {
+    .filter__list.li-nav:nth-last-child(-n + 3){
+        margin-bottom: 0px;
+    }
+    .filter__list.li-nav:nth-last-child(2){
+        margin-left: 0px;
+    }
 }
-.filter__list:nth-last-child(2){
-    margin-left: 0px;
-}
+
 .filter__button{
     font-family: inherit;
     font-weight: 500;

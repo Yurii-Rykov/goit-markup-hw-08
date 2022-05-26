@@ -81,14 +81,12 @@
         </ul>
     </div>
 
-
-    </div>
-        
+    </div>  
     </header>
 
     <main>
         <section class="hero">
-            <div class="conteiner">
+            <div class="conteiner ">
                 <h1 class="hero__text">Эффективные решения для вашего бизнеса</h1>
                 <div class="hero__wrapper">
                     <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
@@ -146,9 +144,42 @@
             <div class="conteiner">
                 <h2 class="title work__title">Чем мы занимаемся</h2>
                 <ul class="flex-between">
-                    <li class="li-nav work__list"><img src="images/img1.jpg" alt="изображение" width="370"><div class="work__wrapper"><h3 class="second-titel">Десктопные приложения</h3></div></li>
-                    <li class="li-nav work__list"><img src="images/img2.jpg" alt="изображение" width="370"><div class="work__wrapper"><h3 class="second-titel">Мобильные приложения</h3></div></li>
-                    <li class="li-nav work__list"><img src="images/img3.jpg" alt="изображение" width="370"><div class="work__wrapper"><h3 class="second-titel">Дизайнерские решения</h3></div></li>
+                    <li class="li-nav work__list">
+                            <picture>
+                                <source
+                                srcset="./images/works1-370.jpg 1x, ./images/works1-740.jpg 2x"
+                                media="(min-width: 1200px)"
+                                />
+                                <img src="./images/works1-370.jpg" alt="фото" >
+                            </picture>
+                    <div class="work__wrapper">
+                        <h3 class="second-titel">Десктопные приложения</h3>
+                    </div>
+                    </li>
+                    <li class="li-nav work__list">
+                        <picture>
+                            <source
+                            srcset="./images/works2-370.jpg 1x, ./images/works2-740.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <img src="./images/works1-370.jpg" alt="фото" >
+                        </picture>
+                        <div class="work__wrapper">
+                            <h3 class="second-titel">Мобильные приложения</h3>
+                        </div>
+                    </li>
+                    <li class="li-nav work__list">
+                        <picture>
+                            <source
+                            srcset="./images/works1-370.jpg 1x, ./images/works1-740.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <img src="./images/works1-370.jpg" alt="фото" >
+                        </picture>
+                        <div class="work__wrapper">
+                            <h3 class="second-titel">Дизайнерские решения</h3>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -159,7 +190,7 @@
                     <li class="team__list li-nav">
                         <picture>
                             <source
-                              srcset="./images/employee1-278.jpg 1x, ./images/employee1-556.jpg 2x"
+                              srcset="./images/employee1-270.jpg 1x, ./images/employee1-540.jpg 2x"
                               media="(min-width: 1200px)"
                             />
                             <source
@@ -168,9 +199,9 @@
                             />
                             <source
                               srcset="./images/employee1-450.jpg 1x, ./images/employee1-900.jpg 2x"
-                              media="(max-width: 767px)"
+                              media="(max-width: 768px)"
                             />
-                            <img src="./images/employee1-278.jpg" alt="фото" >
+                            <img src="./images/employee1-270.jpg" alt="фото" >
                         </picture>
                         <div class="employee">
                             <h3 class="employee__title">Игорь Демьяненко</h3>
