@@ -14,9 +14,11 @@
     opacity: 0;
     pointer-events: none;
 }
+
 .backdrop.is-hidden .modal{
     transform: translate(-50%, -50%) scale(0.7);
 }
+
 .modal{
     position: absolute;
     display: flex;
@@ -36,6 +38,7 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 @media screen and (max-width:1199px) {
     .modal{
         width: 450px;
@@ -61,6 +64,7 @@
     fill: var(--blue-color);
 }
 }
+
 .modal__icon{
     fill: var(--black-color);
     width: 18px;
@@ -76,6 +80,7 @@
     letter-spacing: 0.03em;
     color: var(--main-font-color);
 }
+
 @media screen and (max-width:1199px) {
     .modal__text{
         width: 370px;
@@ -101,12 +106,14 @@
     fill: var(--blue-color);
 }
 }
+
 @media screen and (max-width:1199px) {
     .registration__input{
         width: 370px;
         height: 40px;
     }
 }
+
 .registration__text{
     margin-bottom: 4px;
     font-size: 12px;
@@ -118,6 +125,7 @@
 .registration__label{
     position: relative;
 }
+
 .registration__icon{
     position: absolute;
     top: 50%;
@@ -127,6 +135,7 @@
     
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .comment{
     resize: none;
     width: 448px;
@@ -141,12 +150,14 @@
         border:1px solid var(--blue-color);
     }
 }
+
 @media screen and (max-width:1199px) {
     .comment{
         width: 370px;
         height: 120px;
     }
 }
+
 .check{
     display: flex;
     justify-content: center;
@@ -157,15 +168,18 @@
     letter-spacing: 0.03em;
     color: var(--grey-color);
 }
+
 @media screen and (max-width:1199px) {
     .check{
         font-size: 12px;
         line-height: 1.1;
     }
 }
+
 .check__link{
     color: var(--blue-color);
 }
+
 .check__icon{
     display: inline-block;
     margin-right: 8px;
@@ -174,6 +188,7 @@
     border: 2px solid var(--main-font-color);
     border-radius: 2px;
 }
+
 .check__box:checked + .check__icon {
     background-color: var(--blue-color);
     background-image: url(../../images/check.svg);
@@ -182,6 +197,7 @@
     background-origin: border-box;
     border: transparent;
 }
+
 .btn-modal{
     display: block;
     margin-right: auto;
