@@ -617,7 +617,6 @@ img {
 
 .telegram__input {
   height: 50px;
-  width: 100%;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -683,6 +682,15 @@ img {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .telegram__label {
+    min-width: 100%;
+  }
+  .telegram__input {
+    min-width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .second-titel.social-wrapper__text {
     text-align: center;
@@ -691,9 +699,6 @@ img {
   .distribution__text {
     text-align: center;
   }
-}
-
-@media screen and (min-width: 768px) {
   .telegram {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -706,9 +711,9 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-@media screen and (min-width: 768px) {
+  .telegram__input {
+    width: 450px;
+  }
   .footer-box-contact {
     display: -webkit-box;
     display: -ms-flexbox;
