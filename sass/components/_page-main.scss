@@ -149,6 +149,9 @@
 }
 
 @media screen and (min-width:1200px) {
+    .flex-between.abuot__flex{
+        margin: 0px;
+    }
     .abuot.li-nav{
             max-width: 270px;
             margin: 0px;
@@ -166,6 +169,11 @@
         .work.section{
                 display: none;
         }
+}
+@media screen and (min-width: 1200px){
+.flex-between.work__flex {
+    margin: 0px;
+}
 }
 
 .work.section{

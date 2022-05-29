@@ -88,7 +88,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 0px;
   }
   .section {
     padding-top: 94px;
@@ -460,6 +459,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .flex-between.abuot__flex {
+    margin: 0px;
+  }
   .abuot.li-nav {
     max-width: 270px;
     margin: 0px;
@@ -479,6 +481,12 @@ img {
 @media screen and (max-width: 1199px) {
   .work.section {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex-between.work__flex {
+    margin: 0px;
   }
 }
 
@@ -888,9 +896,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
